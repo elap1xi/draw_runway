@@ -28,6 +28,10 @@ function draw_runway(lat, lon, ICAO){
     const gap = 100;    //  white space
     const canvasSize = 1100-2*gap;  // canvas width - 2 x gap
 
+    // background color
+    ctx.fillStyle = "#4a4c4f";
+    ctx.fillRect(0, 0, cvs.width, cvs.height);
+
     let longitudes = lon.map(Number);
     let latitudes = lat.map(Number);
 
